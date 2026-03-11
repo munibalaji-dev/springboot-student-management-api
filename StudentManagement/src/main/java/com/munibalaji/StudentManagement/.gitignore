@@ -1,0 +1,33 @@
+# Maven
+target/
+
+# Gradle
+build/
+
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+
+# Jar files
+*.jar
