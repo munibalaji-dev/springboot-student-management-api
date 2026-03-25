@@ -1,4 +1,4 @@
-package com.munibalaji.StudentManagement.Services;
+package com.munibalaji.StudentManagement.services;
 
 import com.munibalaji.StudentManagement.dtos.StudentRequestDto;
 import com.munibalaji.StudentManagement.dtos.StudentResponseDto;
@@ -17,8 +17,8 @@ import java.util.Arrays;
 import java.util.List;
 
 
-@Service("FakeStudentService")
-public class FakeStudentService implements StudentService{
+@Service("StudentServiceImpl")
+public class StudentServiceImpl implements StudentService{
 
 
 //    private static final String BASE_URL = "http://localhost:8080/students";
@@ -33,7 +33,7 @@ public class FakeStudentService implements StudentService{
     private RestTemplateBuilder restTemplateBuilder;
     private StudentRepository studentRepository;
     @Autowired
-    public FakeStudentService(RestTemplateBuilder restTemplateBuilder,
+    public StudentServiceImpl(RestTemplateBuilder restTemplateBuilder,
                               StudentRepository studentRepository){
         this.restTemplateBuilder = restTemplateBuilder;
         this.studentRepository = studentRepository;

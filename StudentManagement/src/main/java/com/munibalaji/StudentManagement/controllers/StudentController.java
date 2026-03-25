@@ -1,10 +1,9 @@
 package com.munibalaji.StudentManagement.controllers;
 
-import com.munibalaji.StudentManagement.Services.StudentService;
+import com.munibalaji.StudentManagement.services.StudentService;
 import com.munibalaji.StudentManagement.dtos.StudentRequestDto;
 import com.munibalaji.StudentManagement.dtos.StudentResponseDto;
 import com.munibalaji.StudentManagement.exceptions.NotFoundException;
-import com.munibalaji.StudentManagement.models.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.HttpStatus;
@@ -21,7 +20,7 @@ public class StudentController {
     private StudentService studentService;
 
     @Autowired
-    public StudentController (@Qualifier("FakeStudentService") StudentService studentService){
+    public StudentController (@Qualifier("StudentServiceImpl") StudentService studentService){
         this.studentService = studentService;
     }
 

@@ -1,4 +1,4 @@
-package com.munibalaji.StudentManagement.Services;
+package com.munibalaji.StudentManagement.services;
 
 
 import com.munibalaji.StudentManagement.dtos.StudentRequestDto;
